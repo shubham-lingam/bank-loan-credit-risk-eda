@@ -1,64 +1,80 @@
-# 🏦 Bank Loan & Credit Risk Analysis — EDA
+# Bank Loan & Credit Risk Analysis — EDA
 
-## 📌 Project Overview
+An Exploratory Data Analysis (EDA) project analyzing 45,000 bank loan applications to understand borrower characteristics, loan patterns, credit profiles, and loan outcomes.
+
+---
+
+## Project Overview
 
 This project presents an Exploratory Data Analysis (EDA) of **45,000 bank loan applications** to understand borrower characteristics, loan patterns, credit profiles, and loan outcomes.
 
-The analysis focuses on variables such as applicant income, employment experience, home ownership, loan purpose, loan amount, interest rate, credit score, previous loan defaults, and loan status.
+The analysis focuses on variables such as:
 
-The objective is to identify meaningful patterns within the loan portfolio and generate data-driven insights that can support better understanding of credit risk.
+- Applicant income
+- Employment experience
+- Home ownership
+- Loan purpose
+- Loan amount
+- Interest rate
+- Credit score
+- Previous loan defaults
+- Loan status
 
----
-
-## 🎯 Project Objectives
-
-* Understand the structure and characteristics of the loan dataset.
-* Inspect and clean the available data.
-* Process variables for analysis.
-* Create meaningful analytical features.
-* Analyze loan outcomes across customer and loan characteristics.
-* Identify patterns associated with loan defaults.
-* Generate actionable business insights and recommendations.
+The objective is to identify meaningful patterns within the loan portfolio and generate data-driven insights that can support a better understanding of credit risk.
 
 ---
 
-## 📂 Dataset
+## Project Objectives
+
+The main objectives of this project are to:
+
+- Understand the structure and characteristics of the loan dataset
+- Inspect and clean the available data
+- Process variables for analysis
+- Create meaningful analytical features
+- Analyze loan outcomes across customer and loan characteristics
+- Identify patterns associated with loan defaults
+- Generate actionable business insights and recommendations
+
+---
+
+## Dataset
 
 The analysis uses the **Bank Loan Data** dataset containing:
 
-* **45,000 rows**
-* **14 original columns**
+- **45,000 rows**
+- **14 original columns**
 
 ### Main Variables
 
-| Category  | Variables                               |
-| --------- | --------------------------------------- |
-| Customer  | Age, Gender, Education                  |
-| Financial | Income, Employment Experience           |
-| Housing   | Home Ownership                          |
-| Loan      | Loan Amount, Loan Intent, Interest Rate |
-| Credit    | Credit Score, Credit History Length     |
-| Risk      | Previous Loan Defaults                  |
-| Outcome   | Loan Status                             |
+| Category | Variables |
+|---|---|
+| Customer | Age, Gender, Education |
+| Financial | Income, Employment Experience |
+| Housing | Home Ownership |
+| Loan | Loan Amount, Loan Intent, Interest Rate |
+| Credit | Credit Score, Credit History Length |
+| Risk | Previous Loan Defaults |
+| Outcome | Loan Status |
 
 **Dataset Source:** Kaggle — Bank Loan Data
 
 ---
 
-## 🛠️ Tools & Technologies
+## Tools & Technologies
 
-* **Python**
-* **NumPy**
-* **Pandas**
-* **Matplotlib**
-* **Kaggle Notebook**
-* **GitHub**
+- **Python**
+- **NumPy**
+- **Pandas**
+- **Matplotlib**
+- **Kaggle Notebook**
+- **GitHub**
 
 No machine learning models were used because this project focuses specifically on **Exploratory Data Analysis**.
 
 ---
 
-## 🔍 Project Workflow
+## Project Workflow
 
 ```text
 Data Collection
@@ -86,85 +102,85 @@ Conclusion
 
 ---
 
-## 📊 Business Questions
+## Business Questions
 
-The analysis answers six key business questions:
+The analysis answers six key business questions.
 
-### Q1. What is the overall distribution of loan outcomes?
+### Q1. What is the Overall Distribution of Loan Outcomes?
 
 The dataset contains **45,000 loan applications**.
 
-* Non-Default: **35,000 (77.78%)**
-* Default: **10,000 (22.22%)**
+- Non-Default: **35,000 (77.78%)**
+- Default: **10,000 (22.22%)**
 
 ---
 
-### Q2. Which loan purposes are most common among applicants?
+### Q2. Which Loan Purposes are Most Common Among Applicants?
 
-Education loans were the most common purpose:
+Education loans were the most common purpose.
 
-* Education: **9,153 (20.34%)**
-* Medical: **8,548 (19.00%)**
-* Venture: **7,819 (17.38%)**
-* Personal: **7,552 (16.78%)**
-* Debt Consolidation: **7,145 (15.88%)**
-* Home Improvement: **4,783 (10.63%)**
+- Education: **9,153 (20.34%)**
+- Medical: **8,548 (19.00%)**
+- Venture: **7,819 (17.38%)**
+- Personal: **7,552 (16.78%)**
+- Debt Consolidation: **7,145 (15.88%)**
+- Home Improvement: **4,783 (10.63%)**
 
 ---
 
-### Q3. How does applicant income vary across loan outcomes?
+### Q3. How Does Applicant Income Vary Across Loan Outcomes?
 
 | Loan Outcome | Average Income | Median Income |
-| ------------ | -------------: | ------------: |
-| Non-Default  |      86,157.04 |        72,928 |
-| Default      |      59,886.10 |        50,629 |
+|---|---:|---:|
+| Non-Default | 86,157.04 | 72,928 |
+| Default | 59,886.10 | 50,629 |
 
 Defaulted applicants had considerably lower income levels than non-defaulted applicants.
 
 ---
 
-### Q4. How does credit score relate to loan outcomes?
+### Q4. How Does Credit Score Relate to Loan Outcomes?
 
-Average credit scores were very similar:
+Average credit scores were very similar between the two groups.
 
 | Loan Outcome | Average Credit Score |
-| ------------ | -------------------: |
-| Default      |               631.89 |
-| Non-Default  |               632.81 |
+|---|---:|
+| Default | 631.89 |
+| Non-Default | 632.81 |
 
 The analysis suggests that **credit score alone does not strongly differentiate default and non-default outcomes** in this dataset.
 
 ---
 
-### Q5. Which loan purposes have the highest default rates?
+### Q5. Which Loan Purposes Have the Highest Default Rates?
 
-| Loan Purpose       | Default Rate |
-| ------------------ | -----------: |
-| Debt Consolidation |   **30.27%** |
-| Medical            |   **27.82%** |
-| Home Improvement   |   **26.30%** |
-| Personal           |   **20.14%** |
-| Education          |   **16.96%** |
-| Venture            |   **14.43%** |
+| Loan Purpose | Default Rate |
+|---|---:|
+| Debt Consolidation | **30.27%** |
+| Medical | **27.82%** |
+| Home Improvement | **26.30%** |
+| Personal | **20.14%** |
+| Education | **16.96%** |
+| Venture | **14.43%** |
 
 Debt Consolidation loans recorded the highest default rate, while Venture loans recorded the lowest.
 
 ---
 
-### Q6. How do loan amount and interest rate vary across loan outcomes?
+### Q6. How Do Loan Amount and Interest Rate Vary Across Loan Outcomes?
 
-| Loan Characteristic   |   Default | Non-Default |
-| --------------------- | --------: | ----------: |
-| Average Loan Amount   | 10,855.69 |    9,219.58 |
-| Median Loan Amount    |     9,750 |       8,000 |
-| Average Interest Rate |    12.86% |      10.48% |
-| Median Interest Rate  |    12.98% |      10.85% |
+| Loan Characteristic | Default | Non-Default |
+|---|---:|---:|
+| Average Loan Amount | 10,855.69 | 9,219.58 |
+| Median Loan Amount | 9,750 | 8,000 |
+| Average Interest Rate | 12.86% | 10.48% |
+| Median Interest Rate | 12.98% | 10.85% |
 
 Defaulted applicants generally had **larger loans and higher interest rates**.
 
 ---
 
-## 💡 Key Business Insights
+## Key Business Insights
 
 1. **22.22% of applicants were classified as defaulted**, highlighting a meaningful level of credit risk within the dataset.
 
@@ -182,23 +198,31 @@ Defaulted applicants generally had **larger loans and higher interest rates**.
 
 ---
 
-## 🎯 Business Recommendations
+## Business Recommendations
 
 ### 1. Strengthen Monitoring of High-Risk Loan Purposes
 
 Debt Consolidation, Medical, and Home Improvement loans showed relatively high default rates and could receive additional risk monitoring.
 
+---
+
 ### 2. Consider Income During Credit Assessment
 
 Income showed a noticeable difference between defaulted and non-defaulted applicants and should remain an important consideration when assessing repayment capacity.
+
+---
 
 ### 3. Review Higher Loan Amounts Carefully
 
 Higher loan amounts were associated with defaulted applicants in the analysis. Additional affordability checks could be considered for larger loan requests.
 
+---
+
 ### 4. Evaluate Interest Rates Alongside Repayment Capacity
 
 Higher interest rates were observed among defaulted applicants. Lending decisions should consider whether the proposed repayment obligation is affordable for the borrower.
+
+---
 
 ### 5. Avoid Relying on Credit Score Alone
 
@@ -206,21 +230,25 @@ Credit scores were very similar between the two outcome groups. A broader assess
 
 ---
 
-## ⚠️ Limitations
+## Limitations
 
-* The analysis identifies relationships and patterns but does not establish causation.
-* The dataset may not represent every banking customer or lending market.
-* Some categories contain relatively few observations.
-* The analysis is limited to the variables available in the dataset.
-* No predictive machine learning model was developed because this project focuses on EDA.
+- The analysis identifies relationships and patterns but does not establish causation.
+- The dataset may not represent every banking customer or lending market.
+- Some categories contain relatively few observations.
+- The analysis is limited to the variables available in the dataset.
+- No predictive machine learning model was developed because this project focuses on EDA.
 
 ---
 
-## 📝 Conclusion
+## Conclusion
 
 This project analyzed **45,000 bank loan applications** to identify patterns in borrower characteristics, loan characteristics, and loan outcomes.
 
-The analysis found that defaulted applicants generally had **lower incomes, larger loan amounts, and higher interest rates** than non-defaulted applicants.
+The analysis found that defaulted applicants generally had:
+
+- Lower incomes
+- Larger loan amounts
+- Higher interest rates
 
 Loan purpose also showed a meaningful relationship with default rates, with **Debt Consolidation recording the highest default rate at 30.27%**.
 
@@ -230,32 +258,33 @@ Overall, the project demonstrates how exploratory data analysis can transform ra
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```text
 bank-loan-credit-risk-eda/
 │
 ├── Bank_Loan_Credit_Risk_EDA.ipynb
 ├── README.md
+│
 └── dataset/
     └── README.md
 ```
 
 ---
 
-## 📚 References
+## References
 
-* Kaggle — Bank Loan Data
-* Pandas Documentation
-* NumPy Documentation
-* Matplotlib Documentation
+- Kaggle — Bank Loan Data
+- Pandas Documentation
+- NumPy Documentation
+- Matplotlib Documentation
 
 ---
 
-## 👤 Author
+## Author
 
 **L Shubham**
 
-Data Analyst | Python | SQL | Power BI | Excel | Tableau
+**Data Analyst | Python | SQL | Power BI | Excel | Tableau**
 
-GitHub: `https://github.com/shubham-lingam`
+**GitHub:** https://github.com/shubham-lingam
